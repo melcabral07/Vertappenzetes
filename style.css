@@ -10,21 +10,27 @@ html{
     margin: 0;
     font-family: 'momo trust display', system-ui, Arial, sans-serif;
     color: #000000;
-    background-color: #234a91;
+    background-color: #21488f;
     line-height: 1.6;
  }
+
+ /*=================
+    cabeçalho
+=================*/
 
 .topbar{
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #cfcf7c;
+    background-color: #f5d800b0;
     border-bottom: 4px solid #801f1f;
 }
 
 .container{
-    width: min(1100px, 92%); 
+    width: min( 2000px/*1100px*/, 92%); 
     margin: 0 auto;
+    /*display: grid;
+    grid-template-columns: auto auto auto auto;*/
 }
 
 .row{
@@ -50,4 +56,218 @@ nav a{
 
 nav a:hover {
     background-color: #801f1f;
+}
+
+/*=================
+sobre e carreira
+=================*/
+
+.hero p {
+    color: #222;
+    margin-bottom: 10rem;
+}
+
+.hero h1 {
+    margin-bottom: 0.4rem;
+    font-size: 2.2rem;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-img {
+    flex: 1 1 45%;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease;
+    border: 1px solid #000000;
+}
+
+.hero-img img:hover {
+    transform: scale(1.03);
+}
+
+/*=================
+    conquitas
+=================*/
+
+
+
+section {
+    padding: 2rem 0;
+    scroll-margin-top: 4rem;
+}
+
+section h2 {
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 340px;
+    flex-grow: 1;
+    background-color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    padding: 13px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.thumb {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.thumb img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.thumb img:hover {
+    transform: scale(1.08);
+}
+
+.item h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.item p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+
+/*=================
+    contato
+=================*/
+
+.contact-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.contact-grid > div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px;
+    min-width: 260px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 1rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+input, textarea{
+    font: inherit;
+    padding: 13px 14px 13px 14px;
+    border: 1.5px solid #801f1f;
+    border-radius: 10px;
+    background-color: #d4d3d3;
+    outline: none;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #801f1f;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #801f1f;
+    padding: 13px 16px 13px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(1.15);
+}
+
+/*=================
+    rodapé
+=================*/
+
+footer{
+    border-top: 4px solid #801f1f;
+    background-color: #f5d800b0;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #801f1f;
+    font-weight: 600;
+}
+
+/*=================
+   responsividade
+=================*/
+
+@media (max-width: 870px) {
+    section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    
+    nav a {
+        padding: 10px 11px 10px 11px;
+    }
+
+    .hero-text {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
