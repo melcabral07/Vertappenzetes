@@ -130,8 +130,8 @@ section h2 {
 .item {
     flex-basis: 340px;
     flex-grow: 1;
-    background-color: #cfcfcf;
-    border: 1px solid #cfcfcf;
+    background-color: #10367e;
+    border: 1px solid #000000;
     border-radius: 12px;
     padding: 13px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
