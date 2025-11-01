@@ -27,10 +27,8 @@ html{
 }
 
 .container{
-    width: min( 2000px/*1100px*/, 92%); 
+    width: min( 2000px, 92%); 
     margin: 0 auto;
-    /*display: grid;
-    grid-template-columns: auto auto auto auto;*/
 }
 
 .row{
