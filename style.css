@@ -1,17 +1,17 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;/*ajuda na defição do tamanho dos elementos na tela*/
 }
 
 html{
-    scroll-behavior: smooth
+    scroll-behavior: smooth/*rolagem lenta*/
 }
 
  body{
-    margin: 0;
-    font-family: 'Momo Trust Sans', system-ui, Arial, sans-serif;
-    color: #c8dbff;
-    background-color: #21488f;
-    line-height: 1.6;
+    margin: 0;/*zera a margem*/
+    font-family: 'Momo Trust Sans', system-ui, Arial, sans-serif;/*fontes*/
+    color: #c8dbff;/*cor do texto*/
+    background-color: #21488f;/*cor do fundo*/
+    line-height: 1.6;/*distancia de uma linha para outra*/
  }
 
  /*=================
@@ -19,22 +19,22 @@ html{
 =================*/
 
 .topbar{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: sticky;/*fixa um elemento na tela*/
+    top: 0;/*define a posição onde o position vai pixar*/
+    z-index: 10;/*fala que o elemneto vai ficar uma camada a cima do outro*/
     background-color: #f5d800b0;
-    border-bottom: 4px solid #801f1f;
+    border-bottom: 4px solid #801f1f;/*define a largura, o estado e a cor da borda do borão*/
 }
 
 .container{
-    width: min( 2000px, 92%); 
-    margin: 0 auto;
+    width: min( 2000px, 92%); /*quando o elemento atingir um numero menor que 2000px, ele vai ocupar 92% da tela*/
+    margin: 0 auto;/*define a margem*/
 }
 
 .row{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;/*alinha os intem no centro*/
+    justify-content: space-evenly;/*da espaço entre os elementos*/
 }
 
 .logo{ 
@@ -80,7 +80,7 @@ sobre e carreira
 
 .hero-text {
     max-width: 45%;
-    text-align: justify;
+    text-align: justify;/*justifica o texto*/
 }
 
 .hero-img {
@@ -213,7 +213,7 @@ section h2 {
   height: 25px;
   right: -17px;
   background-color: #f5d800;
-  border: 4px solid #ffb555;
+  border: 4px solid #c9a400;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
