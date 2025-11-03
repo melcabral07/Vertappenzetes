@@ -1,43 +1,62 @@
-*{
-    box-sizing: border-box;/*ajuda na defição do tamanho dos elementos na tela*/
+* {
+    box-sizing: border-box;
+    /*ajuda na defição do tamanho dos elementos na tela*/
 }
 
-html{
-    scroll-behavior: smooth/*rolagem lenta*/
+html {
+    scroll-behavior: smooth
+        /*rolagem lenta*/
 }
 
- body{
-    margin: 0;/*zera a margem*/
-    font-family: 'Momo Trust Sans', system-ui, Arial, sans-serif;/*fontes*/
-    color: #c8dbff;/*cor do texto*/
-    background-color: #21488f;/*cor do fundo*/
-    line-height: 1.6;/*distancia de uma linha para outra*/
- }
+body {
+    margin: 0;
+    /*zera a margem*/
+    font-family: 'Momo Trust Sans', system-ui, Arial, sans-serif;
+    /*fontes*/
+    color: #c8dbff;
+    /*cor do texto*/
+    background-color: #21488f;
+    /*cor do fundo*/
+    line-height: 1.6;
+    /*distancia de uma linha para outra*/
+}
 
- /*=================
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*=================
     cabeçalho
 =================*/
 
-.topbar{
-    position: sticky;/*fixa um elemento na tela*/
-    top: 0;/*define a posição onde o position vai pixar*/
-    z-index: 10;/*fala que o elemneto vai ficar uma camada a cima do outro*/
+.topbar {
+    position: sticky;
+    /*fixa um elemento na tela*/
+    top: 0;
+    /*define a posição onde o position vai pixar*/
+    z-index: 10;
+    /*fala que o elemneto vai ficar uma camada a cima do outro*/
     background-color: #f5d800b0;
-    border-bottom: 4px solid #801f1f;/*define a largura, o estado e a cor da borda do borão*/
+    border-bottom: 4px solid #801f1f;
+    /*define a largura, o estado e a cor da borda do borão*/
 }
 
-.container{
-    width: min( 2000px, 92%); /*quando o elemento atingir um numero menor que 2000px, ele vai ocupar 92% da tela*/
-    margin: 0 auto;/*define a margem*/
+.container {
+    width: min(2000px, 92%);
+    /*quando o elemento atingir um numero menor que 2000px, ele vai ocupar 92% da tela*/
+    margin: 0 auto;
+    /*define a margem*/
 }
 
-.row{
+.row {
     display: flex;
-    align-items: center;/*alinha os intem no centro*/
-    justify-content: space-evenly;/*da espaço entre os elementos*/
+    align-items: center;
+    /*alinha os intem no centro*/
+    justify-content: space-evenly;
+    /*da espaço entre os elementos*/
 }
 
-.logo{ 
+.logo {
     font-weight: 800;
     text-decoration: none;
     color: #222;
@@ -45,7 +64,7 @@ html{
     padding: 0.8rem 0;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #222;
     padding: 0.6rem 0.8rem;
@@ -80,7 +99,8 @@ sobre e carreira
 
 .hero-text {
     max-width: 45%;
-    text-align: justify;/*justifica o texto*/
+    text-align: justify;
+    /*justifica o texto*/
 }
 
 .hero-img {
@@ -133,7 +153,7 @@ section h2 {
     border: 1px solid #000000;
     border-radius: 12px;
     padding: 13px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.459);
     transition: transform 0.3s;
 }
 
@@ -163,15 +183,15 @@ section h2 {
     font-size: 18px;
 }
 
-.ponto-1{
+.ponto-1 {
     margin-top: 15.5rem;
 }
 
-.ponto-2{
+.ponto-2 {
     margin-top: 7.5rem;
 }
 
-.ponto-3{
+.ponto-3 {
     margin-top: 17.5rem;
 }
 
@@ -180,133 +200,141 @@ section h2 {
 =================*/
 
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* A linha vertical */
- .timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #3d73d6;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #3d73d6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
 /* Container ao redor do conteúdo */
 .container-timeline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 }
 
 /* Os círculos na linha do tempo */
 .container-timeline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #f5d800;
-  border: 4px solid #c9a400;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #f5d800;
+    border: 4px solid #c9a400;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 /* Deixar o conteiner na esquerda*/
 .left {
-  left: 0;
+    left: 0;
 }
 
 /* Deixar o conteiner na direita */
 .right {
-  left: 50%;
+    left: 50%;
 }
 
 /* colocar setas no contêiner da esquerda*/
 .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #3d73d6;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #3d73d6;
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #3d73d6;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #3d73d6;
 }
 
 /* colocar setas no contêiner da direita*/
 .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #3d73d6;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #3d73d6 transparent transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #3d73d6;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #3d73d6 transparent transparent;
 }
 
 /* fixar o circulo */
 .right::after {
-  left: -16px;
+    left: -16px;
 }
 
 /* O conteudo real */
 .content {
-  padding: 20px 30px;
-  background-color:  #10367e;
-  position: relative;
-  border-radius: 6px;
-  border: 1px solid #000;
+    padding: 20px 30px;
+    background-color: #10367e;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.459);
+    transition: transform 0.3s;
 }
 
-.recor-text{
+.content:hover {
+    transform: translateY(-5px);/*faz tudo que está dentro do content mexer -5px pro eixo y*/
+}
+
+.recor-text {
     text-align: center;
 }
+
 /*=================
     contato
 =================*/
 
-.contact-grid{
+.contact-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     align-items: flex-start;
 }
 
-.contact-grid > div{
+.contact-grid>div {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 320px;
     min-width: 260px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 1rem;
 }
 
-label{
+label {
     display: flex;
     flex-direction: column;
     gap: 5px;
     font-weight: 500;
 }
 
-input, textarea{
+input,
+textarea {
     font: inherit;
     padding: 13px 14px 13px 14px;
     border: 1.5px solid #801f1f;
@@ -315,11 +343,12 @@ input, textarea{
     outline: none;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     border: 2px solid #801f1f;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background-color: #801f1f;
     padding: 13px 16px 13px 16px;
@@ -329,7 +358,7 @@ input:focus, textarea:focus{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     filter: brightness(1.15);
 }
 
@@ -337,7 +366,7 @@ input:focus, textarea:focus{
     rodapé
 =================*/
 
-footer{
+footer {
     border-top: 4px solid #801f1f;
     background-color: #f5d800b0;
     color: black;
@@ -361,7 +390,7 @@ footer a {
         padding-top: 56px;
         padding-bottom: 56px;
     }
-    
+
     nav a {
         padding: 10px 11px 10px 11px;
     }
