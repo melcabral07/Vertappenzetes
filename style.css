@@ -26,6 +26,17 @@ h1 {
 }
 
 /*=================
+      banner
+=================*/
+
+.banner img {
+  width: 100%;      /* faz o banner ocupar toda a largura */
+  height: 40rem;     /* mantém a proporção da imagem */
+  display: block;   /* remove espaço indesejado embaixo da imagem */
+}
+
+
+/*=================
     cabeçalho
 =================*/
 
@@ -73,6 +84,7 @@ nav a {
 
 nav a:hover {
     background-color: #801f1f;
+    color: #e8e9eb;
 }
 
 /*=================
@@ -355,6 +367,7 @@ textarea:focus {
 .btn {
     display: inline-block;
     background-color: #801f1f;
+    color: #e8e9eb;
     padding: 13px 16px 13px 16px;
     border-radius: 10px;
     text-decoration: none;
